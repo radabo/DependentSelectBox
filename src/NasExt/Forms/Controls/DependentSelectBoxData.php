@@ -11,13 +11,16 @@
 
 namespace NasExt\Forms\Controls;
 
-use Nette\Object;
+
+use Nette\SmartObject;
 
 /**
  * @author Dusan Hudak
  */
-class DependentSelectBoxData extends Object
+class DependentSelectBoxData
 {
+    use SmartObject;
+
 	/** @var array */
 	private $items = array();
 
